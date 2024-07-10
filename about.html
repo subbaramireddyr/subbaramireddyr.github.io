@@ -22,23 +22,22 @@
         }
         .image-container {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
         }
         .profile-image {
             width: 200px;
             height: 200px;
-            border-radius: 50%;
+            border-radius: 25%;
             object-fit: cover;
         }
-        .video-container {
+        .animation-container {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
         }
-        .hello-video {
-        max-width: 100px;
-        height: auto;
-        border-radius: 4.0px;
-        box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+        .hello-animation {
+            max-width: 200px;
+            height: auto;
+            margin: 0 auto;
         }
         h2, h3 {
             color: #ffffff;
@@ -65,24 +64,22 @@
             border-radius: 5px;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
 </head>
 <body>
     <div class="about-container">
         <div class="image-container">
             <img src="/doc_pic/subbu photo final.jpg" alt="Subbaramireddy" class="profile-image">
         </div>
-        <div class="video-container">
-            <video class="hello-video" autoplay loop muted playsinline>
-                <source src="/doc_pic/hello_animation.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="animation-container">
+            <div id="hello-animation" class="hello-animation"></div>
         </div>
         <h2>Meet Subbaramireddy,</h2>
         <p>
             I am a passionate bioinformatics professional dedicated to unraveling the complexities of biological data through computational methods. With a strong educational foundation and practical experience in both bioinformatics and biotechnology, I strive to make meaningful contributions to the field of biomedical research.
         </p>
         <p>
-            Currently, I am pursuing a Master of Science in Bioinformatics with an Omics concentration at <a href="https://cos.northeastern.edu/bioinformatics/" target="_blank">Northeastern University</a> , where I have delved into computational methods, genomics, and statistical analysis. My academic journey also includes Integrated Biotechnology from <a href="https://vit.ac.in/schools/sbst" target="_blank">Vellore Institute of Technology (VIT)</a>.
+            Currently, I am pursuing a Master of Science in Bioinformatics with an Omics concentration at <a href="https://cos.northeastern.edu/bioinformatics/" target="_blank">Northeastern University</a>, where I have delved into computational methods, genomics, and statistical analysis. My academic journey also includes Integrated Biotechnology from <a href="https://vit.ac.in/schools/sbst" target="_blank">Vellore Institute of Technology (VIT)</a>.
         </p>
         
         <h3>Niche and Expertise</h3>
@@ -117,6 +114,15 @@
         function goBack() {
             window.location.href = 'index.html'; // Replace with your home page URL
         }
+
+        // Lottie animation
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('hello-animation'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: '/doc_pic/hello_animation.json' // Path to your animation JSON file
+        });
     </script>
 </body>
 </html>
