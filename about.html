@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Subbaramireddy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .about-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 2em;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .hello-video {
+        max-width: 100px;
+        height: auto;
+        border-radius: 4.0px;
+        box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+        }
+        h2, h3 {
+            color: #ffffff;
+            margin-top: 1.5em;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #back-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <div class="image-container">
+            <img src="/doc_pic/subbu photo final.jpg" alt="Subbaramireddy" class="profile-image">
+        </div>
+        <div class="video-container">
+            <video class="hello-video" autoplay loop muted playsinline>
+                <source src="/doc_pic/hello_animation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <h2>Meet Subbaramireddy,</h2>
+        <p>
+            I am a passionate bioinformatics professional dedicated to unraveling the complexities of biological data through computational methods. With a strong educational foundation and practical experience in both bioinformatics and biotechnology, I strive to make meaningful contributions to the field of biomedical research.
+        </p>
+        <p>
+            Currently, I am pursuing a Master of Science in Bioinformatics with an Omics concentration at <a href="https://cos.northeastern.edu/bioinformatics/" target="_blank">Northeastern University</a> , where I have delved into computational methods, genomics, and statistical analysis. My academic journey also includes Integrated Biotechnology from <a href="https://vit.ac.in/schools/sbst" target="_blank">Vellore Institute of Technology (VIT)</a>.
+        </p>
+        
+        <h3>Niche and Expertise</h3>
+        <p>
+            My expertise lies in integrating computational tools with biological data to uncover insights that drive research forward. I have a particular interest in genome assembly, differential gene expression analysis, and pathway enrichment analysis. Through my work, I aim to contribute to the understanding of complex diseases and the development of precision medicine strategies.
+        </p>
+        
+        <h3>Professional Journey</h3>
+        <p>
+        At <a href="https://www.brighamandwomens.org/research" target="_blank">Brigham and Women's Hospital</a>, I work as a Research Analyst I Coop, focusing on analyzing whole exome sequencing data to study the impact of genetic mimics of GLP1-Ra and SGLT2i therapy on cardio-kidney outcomes. My role involves using advanced statistical techniques and developing genetic scores to simulate lifelong treatment effects.
+        </p>
+        <p>
+            Previously, as a Computational Biology Intern at Carpenter Lab, Indiana University, I conducted integrative RNA-seq data analysis for breast cancer research. This experience honed my skills in RNA-seq data preprocessing, differential expression analysis, and pathway analysis.
+        </p>
+        
+        <h3>Beyond Bioinformatics</h3>
+        <p>
+            Outside of my professional life, I have a deep love for nature and enjoy exploring the great outdoors through hiking and trekking. Traveling is a significant part of my life, as I love discovering new places and immersing myself in different cultures. Along with this, I have a particular fondness for trying out new food and visiting local coffee shops wherever I go. Exploring diverse cuisines and experiencing the unique atmospheres of coffee shops around the world adds to my enjoyment and appreciation of different cultures.
+        </p>
+        
+        <h3>Get in Touch</h3>
+        <p>
+            Connect with me and say Namaste on <a href="https://www.linkedin.com/in/subbaramireddy-remala-12521814b/" target="_blank">LinkedIn</a> or email me at <a href="mailto:sremala@bwh.harvard.edu">sremala@bwh.harvard.edu</a>.
+        </p>
+        
+        <p><strong>Let's make discoveries together and advance the field of bioinformatics!</strong></p>
+        
+        <button id="back-button" onclick="goBack()">Back to Home</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'portfolio.html'; // Replace with your home page URL
+        }
+    </script>
+</body>
+</html>
